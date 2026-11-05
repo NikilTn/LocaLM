@@ -1,0 +1,59 @@
+name: LocaLM
+options:
+  bundleIdPrefix: com.nikilthalapaneni
+  deploymentTarget:
+    iOS: "26.1"
+  createIntermediateGroups: true
+settings:
+  base:
+    DEVELOPMENT_TEAM: ""
+    CODE_SIGN_STYLE: Automatic
+    SWIFT_VERSION: "5.0"
+    MARKETING_VERSION: "0.1.0"
+    CURRENT_PROJECT_VERSION: "1"
+targets:
+  LocaLM:
+    type: application
+    platform: iOS
+    sources:
+      - path: LocaLM
+    dependencies:
+      # Prebuilt llama.cpp (b11971, Metal enabled). Device-only: the xcframework has no simulator slice.
+      - framework: ../vendor/build-apple/llama.xcframework
+        embed: true
+        codeSign: true
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.nikilthalapaneni.localm
+        PRODUCT_NAME: LocaLM
+        TARGETED_DEVICE_FAMILY: "1"
+        SUPPORTED_PLATFORMS: iphoneos
+        SUPPORTS_MACCATALYST: NO
+        ENABLE_BITCODE: NO
+        ASSETCATALOG_COMPILER_APPICON_NAME: ""
+    info:
+      path: LocaLM/Info.plist
+      properties:
+        CFBundleDisplayName: LocaLM
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        UILaunchScreen: {}
+        UIApplicationSupportsIndirectInputEvents: true
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+        # Lets the user see/import model files under Files > On My iPhone > LocaLM.
+        UIFileSharingEnabled: true
+        LSSupportsOpeningDocumentsInPlace: true
+        # Background work that doesn't need the GPU: morning-briefing refresh and charging-only maintenance.
+        UIBackgroundModes:
+          - fetch
+          - processing
+        BGTaskSchedulerPermittedIdentifiers:
+          - com.nikilthalapaneni.localm.briefing-refresh
+          - com.nikilthalapaneni.localm.maintenance
+        NSContactsUsageDescription: LocaLM looks up contacts when you ask it to call, text, or email someone. Nothing leaves your iPhone.
+        NSAlarmKitUsageDescription: LocaLM sets timers and alarms when you ask it to.
+        NSRemindersFullAccessUsageDescription: LocaLM creates, lists, completes, and deletes reminders when you ask it to. Nothing leaves your iPhone.
+        NSRemindersUsageDescription: LocaLM creates and lists reminders when you ask it to. Nothing leaves your iPhone.
+        NSCalendarsFullAccessUsageDescription: LocaLM reads your calendar and adds events when you ask it to. Nothing leaves your iPhone.
+        NSCalendarsUsageDescription: LocaLM reads your calendar and adds events when you ask it to. Nothing leaves your iPhone.

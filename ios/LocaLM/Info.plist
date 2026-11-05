@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BGTaskSchedulerPermittedIdentifiers</key>
+	<array>
+		<string>com.nikilthalapaneni.localm.briefing-refresh</string>
+		<string>com.nikilthalapaneni.localm.maintenance</string>
+	</array>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleDisplayName</key>
+	<string>LocaLM</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>$(MARKETING_VERSION)</string>
+	<key>CFBundleVersion</key>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
+	<key>LSSupportsOpeningDocumentsInPlace</key>
+	<true/>
+	<key>NSAlarmKitUsageDescription</key>
+	<string>LocaLM sets timers and alarms when you ask it to.</string>
+	<key>NSCalendarsFullAccessUsageDescription</key>
+	<string>LocaLM reads your calendar and adds events when you ask it to. Nothing leaves your iPhone.</string>
+	<key>NSCalendarsUsageDescription</key>
+	<string>LocaLM reads your calendar and adds events when you ask it to. Nothing leaves your iPhone.</string>
+	<key>NSContactsUsageDescription</key>
+	<string>LocaLM looks up contacts when you ask it to call, text, or email someone. Nothing leaves your iPhone.</string>
+	<key>NSRemindersFullAccessUsageDescription</key>
+	<string>LocaLM creates, lists, completes, and deletes reminders when you ask it to. Nothing leaves your iPhone.</string>
+	<key>NSRemindersUsageDescription</key>
+	<string>LocaLM creates and lists reminders when you ask it to. Nothing leaves your iPhone.</string>
+	<key>UIApplicationSupportsIndirectInputEvents</key>
+	<true/>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>fetch</string>
+		<string>processing</string>
+	</array>
+	<key>UIFileSharingEnabled</key>
+	<true/>
+	<key>UILaunchScreen</key>
+	<dict/>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+	</array>
+</dict>
+</plist>

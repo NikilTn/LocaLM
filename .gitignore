@@ -1,0 +1,38 @@
+# Large downloaded artifacts (re-download with the commands in README.md)
+/vendor/
+/models/
+/tools/
+*.gguf
+
+# Xcode
+ios/LocaLM.xcodeproj/
+ios/build/
+DerivedData/
+xcuserdata/
+.DS_Store
+
+# Private local configuration, runtime data and caches
+.env
+.env.*
+!.env.example
+*.local.xcconfig
+*.local.json
+*.sqlite*
+*.db
+*.db-*
+*.p8
+*.p12
+*.pem
+*.key
+*.mobileprovision
+*.xcarchive/
+*.ipa
+*.dSYM/
+*.log
+.venv/
+__pycache__/
+.pytest_cache/
+runtime/
+.build/
+.swiftpm/
+.DS_Store

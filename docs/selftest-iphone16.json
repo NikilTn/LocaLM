@@ -1,0 +1,190 @@
+{
+  "availableAfterLoadMB" : 3065.310775756836,
+  "cases" : [
+    {
+      "footprintMB" : 349.5018844604492,
+      "name" : "reminder_tool_call",
+      "parsedContent" : "",
+      "passed" : true,
+      "prompt" : "Remind me to email my professor tomorrow at 8 AM",
+      "rawOutput" : "<tool_call>\n<function=create_reminder>\n<parameter=title>\nEmail professor\n</parameter>\n<parameter=when>\ntomorrow at 8 AM\n</parameter>\n</function>\n</tool_call>",
+      "stats" : {
+        "generatedTokens" : 30,
+        "generationMs" : 755.640983581543,
+        "promptMs" : 1564.8350715637207,
+        "promptTokens" : 727,
+        "reusedTokens" : 0,
+        "ttftMs" : 1565.8971071243286
+      },
+      "thermal" : "fair",
+      "toolCalls" : [
+        {
+          "arguments" : [
+            {
+              "name" : "title",
+              "value" : "Email professor"
+            },
+            {
+              "name" : "when",
+              "value" : "tomorrow at 8 AM"
+            }
+          ],
+          "name" : "create_reminder"
+        }
+      ]
+    },
+    {
+      "footprintMB" : 349.8456344604492,
+      "name" : "reports_tool_failure_honestly (continues)",
+      "parsedContent" : "I'm sorry, I can't set reminders right now because your Reminders app access is turned off. You might want to check that setting or try again later.",
+      "passed" : true,
+      "prompt" : "Remind me to email my professor tomorrow at 8 AM",
+      "rawOutput" : "I'm sorry, I can't set reminders right now because your Reminders app access is turned off. You might want to check that setting or try again later.",
+      "stats" : {
+        "generatedTokens" : 34,
+        "generationMs" : 874.6860027313232,
+        "promptMs" : 83.96804332733154,
+        "promptTokens" : 788,
+        "reusedTokens" : 757,
+        "ttftMs" : 86.01295948028564
+      },
+      "thermal" : "fair",
+      "toolCalls" : [
+
+      ]
+    },
+    {
+      "footprintMB" : 349.1112594604492,
+      "name" : "list_reminders",
+      "parsedContent" : "",
+      "passed" : true,
+      "prompt" : "What reminders do I have?",
+      "rawOutput" : "<tool_call>\n<function=list_reminders>\n</function>\n</tool_call>",
+      "stats" : {
+        "generatedTokens" : 10,
+        "generationMs" : 258.27300548553467,
+        "promptMs" : 1543.5431003570557,
+        "promptTokens" : 722,
+        "reusedTokens" : 0,
+        "ttftMs" : 1551.6149997711182
+      },
+      "thermal" : "fair",
+      "toolCalls" : [
+        {
+          "arguments" : [
+
+          ],
+          "name" : "list_reminders"
+        }
+      ]
+    },
+    {
+      "footprintMB" : 349.2362594604492,
+      "name" : "no_tool_chat",
+      "parsedContent" : "The sky appears blue because molecules in Earth's atmosphere scatter shorter (blue) wavelengths of sunlight more than longer ones, a process called Rayleigh scattering. This scattered light reaches our eyes from all directions, making the sky look blue during the day.\n\nIt’s a neat optical effect—no need to ask about LocaLM here!",
+      "passed" : true,
+      "prompt" : "In two sentences, why is the sky blue?",
+      "rawOutput" : "The sky appears blue because molecules in Earth's atmosphere scatter shorter (blue) wavelengths of sunlight more than longer ones, a process called Rayleigh scattering. This scattered light reaches our eyes from all directions, making the sky look blue during the day.\n\nIt’s a neat optical effect—no need to ask about LocaLM here!",
+      "stats" : {
+        "generatedTokens" : 66,
+        "generationMs" : 1687.738060951233,
+        "promptMs" : 670.1411008834839,
+        "promptTokens" : 296,
+        "reusedTokens" : 0,
+        "ttftMs" : 677.3769855499268
+      },
+      "thermal" : "fair",
+      "toolCalls" : [
+
+      ]
+    },
+    {
+      "footprintMB" : 349.3925094604492,
+      "name" : "long_generation",
+      "parsedContent" : "The old lighthouse on the cliff had been silent for decades. Keeper Elias watched the waves crash against the rocks below, his hands steady on the brass lantern. One night, a storm rolled in and the light flickered. He lit it again, but this time, he noticed something strange—a faint glow near the base of the tower, like a small fire. He checked the logs; no one had reported it. Yet, every morning after the storm, the beam seemed to pulse once more, as if the lighthouse itself were breathing. Elias never spoke of it, but sometimes, when the wind howled, he swore he heard a voice calling from the rocks. The keeper knew the sea kept secrets, and tonight, for the first time in years, he felt the light reach out to him.\n\n(Word count: 200)",
+      "passed" : true,
+      "prompt" : "Write a 200-word story about a lighthouse keeper.",
+      "rawOutput" : "The old lighthouse on the cliff had been silent for decades. Keeper Elias watched the waves crash against the rocks below, his hands steady on the brass lantern. One night, a storm rolled in and the light flickered. He lit it again, but this time, he noticed something strange—a faint glow near the base of the tower, like a small fire. He checked the logs; no one had reported it. Yet, every morning after the storm, the beam seemed to pulse once more, as if the lighthouse itself were breathing. Elias never spoke of it, but sometimes, when the wind howled, he swore he heard a voice calling from the rocks. The keeper knew the sea kept secrets, and tonight, for the first time in years, he felt the light reach out to him.\n\n(Word count: 200)",
+      "stats" : {
+        "generatedTokens" : 171,
+        "generationMs" : 4329.160928726196,
+        "promptMs" : 679.0510416030884,
+        "promptTokens" : 299,
+        "reusedTokens" : 0,
+        "ttftMs" : 686.3160133361816
+      },
+      "thermal" : "fair",
+      "toolCalls" : [
+
+      ]
+    },
+    {
+      "footprintMB" : 349.7206344604492,
+      "name" : "ambiguous_asks_followup",
+      "parsedContent" : "Sure! What would you like me to remind you about?",
+      "passed" : true,
+      "prompt" : "Remind me about it",
+      "rawOutput" : "Sure! What would you like me to remind you about?",
+      "stats" : {
+        "generatedTokens" : 12,
+        "generationMs" : 313.2350444793701,
+        "promptMs" : 1701.6561031341553,
+        "promptTokens" : 720,
+        "reusedTokens" : 0,
+        "ttftMs" : 1709.1950178146362
+      },
+      "thermal" : "fair",
+      "toolCalls" : [
+
+      ]
+    },
+    {
+      "footprintMB" : 351.8925094604492,
+      "name" : "second_turn_tool_call (continues)",
+      "parsedContent" : "",
+      "passed" : true,
+      "prompt" : "The dentist appointment, tomorrow at 3pm",
+      "rawOutput" : "<tool_call>\n<function=create_reminder>\n<parameter=title>\nDentist appointment\n</parameter>\n<parameter=when>\ntomorrow at 3pm\n</parameter>\n</function>\n</tool_call>",
+      "stats" : {
+        "generatedTokens" : 32,
+        "generationMs" : 836.280107498169,
+        "promptMs" : 3031.067967414856,
+        "promptTokens" : 1221,
+        "reusedTokens" : 0,
+        "ttftMs" : 3040.0010347366333
+      },
+      "thermal" : "fair",
+      "toolCalls" : [
+        {
+          "arguments" : [
+            {
+              "name" : "title",
+              "value" : "Dentist appointment"
+            },
+            {
+              "name" : "when",
+              "value" : "tomorrow at 3pm"
+            }
+          ],
+          "name" : "create_reminder"
+        }
+      ]
+    }
+  ],
+  "device" : "iPhone17,3",
+  "finishedAt" : "2026-10-29T00:13:02Z",
+  "footprintAfterLoadMB" : 310.68922424316406,
+  "footprintBeforeLoadMB" : 16.20386505126953,
+  "model" : "LFM3-1.7B-QAD-Q4_0.gguf",
+  "modelInfo" : {
+    "contextSize" : 8192,
+    "description" : "lfm3 1.7B Q4_0",
+    "isHybrid" : true,
+    "loadMs" : 172.59597778320312,
+    "parameterCount" : 1728801600,
+    "sizeBytes" : 1041368320
+  },
+  "os" : "iOS 26.2",
+  "passed" : 7,
+  "total" : 7
+}
